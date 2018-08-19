@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_tone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="nandita1.cmu.edu.project4android.MyTone">
+
+    <TextView
+        android:text="Enter your text below: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="39dp"
+        android:id="@+id/textView" />
+
+    <Button
+        android:text="analyze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/analyze"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/searchText"
+        android:layout_alignStart="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="26dp"
+        android:id="@+id/searchText"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/analyze" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/FearText"
+        android:layout_below="@+id/AngerText"
+        android:layout_alignStart="@+id/AngerText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/DisgustText"
+        android:layout_below="@+id/FearText"
+        android:layout_alignStart="@+id/FearText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/JoyText"
+        android:layout_below="@+id/DisgustText"
+        android:layout_alignStart="@+id/DisgustText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/SadnessText"
+        android:layout_below="@+id/JoyText"
+        android:layout_alignStart="@+id/JoyText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/AngerText"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/analyze" />
+
+    <Button
+        android:text="Clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/analyze"
+        android:layout_alignEnd="@+id/searchText"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/clear" />
+</RelativeLayout>
